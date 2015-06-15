@@ -1,5 +1,7 @@
 #import "ViewController.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIStackView *stackView;
@@ -17,7 +19,7 @@
 }
 
 #pragma mark - View Helpers
-- (UIView *)viewWithBackgroundColor:(UIColor *)color {
+- (__kindof UIView *)viewWithBackgroundColor:(UIColor *)color {
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = color;
     return view;
@@ -35,3 +37,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
