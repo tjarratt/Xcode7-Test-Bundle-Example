@@ -11,12 +11,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor greenColor]]];
-    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor yellowColor]]];
-    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor orangeColor]]];
-    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor redColor]]];
-    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor purpleColor]]];
-    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor blueColor]]];
+    for (UIColor *color in self.colors) {
+        [self.stackView addArrangedSubview:[self viewWithBackgroundColor:color]];
+    }
 }
 
 #pragma mark - View Helpers
@@ -24,6 +21,17 @@
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = color;
     return view;
+}
+
+- (NSArray<UIColor *> *)colors {
+    return @[
+             [UIColor greenColor],
+             [UIColor yellowColor],
+             [UIColor orangeColor],
+             [UIColor redColor],
+             [UIColor purpleColor],
+             [UIColor blueColor],
+             ];
 }
 
 @end
