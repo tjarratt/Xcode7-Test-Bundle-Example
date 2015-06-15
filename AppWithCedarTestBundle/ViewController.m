@@ -1,14 +1,8 @@
-//
-//  ViewController.m
-//  AppWithCedarTestBundle
-//
-//  Created by Tim Jarratt on 6/13/15.
-//  Copyright © 2015 General Linear Group. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIStackView *stackView;
 
 @end
 
@@ -16,12 +10,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor greenColor]]];
+    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor yellowColor]]];
+    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor orangeColor]]];
+    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor redColor]]];
+    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor purpleColor]]];
+    [self.stackView addArrangedSubview:[self viewWithBackgroundColor:[UIColor blueColor]]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - View Helpers
+- (UIView *)viewWithBackgroundColor:(UIColor *)color {
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = color;
+    return view;
 }
 
 @end
