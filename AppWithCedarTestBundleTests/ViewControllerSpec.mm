@@ -15,15 +15,14 @@ describe(@"ViewController", ^{
     });
 
     describe(@"when the view loads", ^{
-
-        fit(@"should have a textfield become first responder", ^{
-            UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 250, 700)];
-            window.rootViewController = subject;
+        __block UIWindow *window;
+        beforeEach(^{
+            window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 250, 700)];
             [window addSubview:subject.view];
             subject.view should_not be_nil;
-            [[NSRunLoop currentRunLoop] runUntilDate:[NSDate date]];
-            [[NSRunLoop currentRunLoop] runUntilDate:[NSDate date]];
+        });
 
+        fit(@"should have a textfield become first responder", ^{
             UITextField *textField = [subject.stackView.arrangedSubviews.firstObject valueForKey:@"textField"];
             textField should_not be_nil;
             textField.isFirstResponder should be_truthy;
