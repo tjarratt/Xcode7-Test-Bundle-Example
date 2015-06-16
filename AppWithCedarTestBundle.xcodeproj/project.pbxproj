@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F750373D1B2FEDF700602F07 /* UIViewSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = F750373C1B2FEDF700602F07 /* UIViewSubclass.m */; };
 		F7652D831B2CCF7A00C6C600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7652D821B2CCF7A00C6C600 /* main.m */; };
 		F7652D861B2CCF7A00C6C600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7652D851B2CCF7A00C6C600 /* AppDelegate.m */; };
 		F7652D891B2CCF7A00C6C600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7652D881B2CCF7A00C6C600 /* ViewController.m */; };
@@ -133,6 +134,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F750373B1B2FEDF700602F07 /* UIViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewSubclass.h; sourceTree = "<group>"; };
+		F750373C1B2FEDF700602F07 /* UIViewSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewSubclass.m; sourceTree = "<group>"; };
 		F7652D7E1B2CCF7A00C6C600 /* AppWithCedarTestBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWithCedarTestBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7652D821B2CCF7A00C6C600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7652D841B2CCF7A00C6C600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -507,6 +510,8 @@
 				F7652D8F1B2CCF7A00C6C600 /* LaunchScreen.storyboard */,
 				F7652D921B2CCF7A00C6C600 /* Info.plist */,
 				F7652D811B2CCF7A00C6C600 /* Supporting Files */,
+				F750373B1B2FEDF700602F07 /* UIViewSubclass.h */,
+				F750373C1B2FEDF700602F07 /* UIViewSubclass.m */,
 			);
 			path = AppWithCedarTestBundle;
 			sourceTree = "<group>";
@@ -1539,6 +1544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F750373D1B2FEDF700602F07 /* UIViewSubclass.m in Sources */,
 				F7652D891B2CCF7A00C6C600 /* ViewController.m in Sources */,
 				F7652D861B2CCF7A00C6C600 /* AppDelegate.m in Sources */,
 				F7652D831B2CCF7A00C6C600 /* main.m in Sources */,

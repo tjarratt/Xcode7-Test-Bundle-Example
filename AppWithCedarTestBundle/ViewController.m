@@ -1,4 +1,5 @@
 #import "ViewController.h"
+#import "UIViewSubclass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,12 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
     for (UIColor *color in self.colors) {
         [self.stackView addArrangedSubview:[self viewWithBackgroundColor:color]];
     }
+
+    [[self.stackView.arrangedSubviews.firstObject valueForKey:@"textField"] becomeFirstResponder];
 }
 
 #pragma mark - View Helpers
 - (__kindof UIView *)viewWithBackgroundColor:(UIColor *)color {
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = color;
+    UIViewSubclass *view = [[UIViewSubclass alloc] initWithColor:color];
     return view;
 }
 
