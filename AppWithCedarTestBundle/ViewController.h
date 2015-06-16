@@ -2,5 +2,7 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic, readonly) UIStackView *stackView;
+
 @end
 

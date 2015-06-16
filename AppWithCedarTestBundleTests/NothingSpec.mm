@@ -14,7 +14,7 @@ describe(@"Nothing", ^{
         NSLog(@"================> %@", @"nope");
     });
 
-    it(@"should fail", ^{
+    xit(@"should fail", ^{
         1 should equal(2);
     });
 });

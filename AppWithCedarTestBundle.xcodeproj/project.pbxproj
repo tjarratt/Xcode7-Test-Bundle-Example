@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F750373D1B2FEDF700602F07 /* UIViewSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = F750373C1B2FEDF700602F07 /* UIViewSubclass.m */; };
+		F750374D1B2FEF3000602F07 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = F750374C1B2FEF3000602F07 /* ViewControllerSpec.mm */; };
+		F750374F1B2FF20700602F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F750374E1B2FF20600602F07 /* UIKit.framework */; };
 		F7652D831B2CCF7A00C6C600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7652D821B2CCF7A00C6C600 /* main.m */; };
 		F7652D861B2CCF7A00C6C600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7652D851B2CCF7A00C6C600 /* AppDelegate.m */; };
 		F7652D891B2CCF7A00C6C600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7652D881B2CCF7A00C6C600 /* ViewController.m */; };
@@ -136,6 +138,8 @@
 /* Begin PBXFileReference section */
 		F750373B1B2FEDF700602F07 /* UIViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewSubclass.h; sourceTree = "<group>"; };
 		F750373C1B2FEDF700602F07 /* UIViewSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewSubclass.m; sourceTree = "<group>"; };
+		F750374C1B2FEF3000602F07 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
+		F750374E1B2FF20600602F07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7652D7E1B2CCF7A00C6C600 /* AppWithCedarTestBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWithCedarTestBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7652D821B2CCF7A00C6C600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7652D841B2CCF7A00C6C600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -472,6 +476,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F750374F1B2FF20700602F07 /* UIKit.framework in Frameworks */,
 				F7652F821B2D572D00C6C600 /* Cedar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +487,7 @@
 		F7652D751B2CCF7A00C6C600 = {
 			isa = PBXGroup;
 			children = (
+				F750374E1B2FF20600602F07 /* UIKit.framework */,
 				F7652DA61B2CCFD900C6C600 /* Externals */,
 				F7652D801B2CCF7A00C6C600 /* AppWithCedarTestBundle */,
 				F7652D9A1B2CCF7A00C6C600 /* AppWithCedarTestBundleTests */,
@@ -529,6 +535,7 @@
 			children = (
 				F7652D9D1B2CCF7A00C6C600 /* Info.plist */,
 				F7652F7E1B2CD06700C6C600 /* NothingSpec.mm */,
+				F750374C1B2FEF3000602F07 /* ViewControllerSpec.mm */,
 			);
 			path = AppWithCedarTestBundleTests;
 			sourceTree = "<group>";
@@ -1556,6 +1563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7652F7F1B2CD06700C6C600 /* NothingSpec.mm in Sources */,
+				F750374D1B2FEF3000602F07 /* ViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
